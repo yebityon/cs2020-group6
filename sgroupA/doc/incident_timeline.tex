@@ -1,0 +1,33 @@
+% !TeX root = ./main.tex
+
+\begin{savenotes}
+\begin{table}[htbp]
+    \centering
+    \caption{インシデントタイムライン}
+    \label{tab:incident_timeline}
+    \begin{tabular}{|l|p{8cm}|}
+    \hline
+    2017年3月6日 & Apache Struts 2 に関する脆弱性 S2-045 が Wiki\footnote{
+        S2-045 - Apache Struts 2 Wiki - Apache Software Foundation
+        : \url{https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=68717772}
+    }
+    に投稿される（3/2にV1が出ているが，バージョン 2.3.32 について言及されておらず不完全と判断した） \\ \hline
+    2017年3月7日 & Github で攻撃コード公開\footnote{
+        xsscx氏による一例: \url{https://github.com/xsscx/cve-2017-5638}
+    } \\ \hline
+    2017年3月9日 & IPAが管理する，Apache Struts2の脆弱性対策情報一覧ページ
+    \footnote{
+        Apache Struts2 の脆弱性対策情報一覧
+        : \url{https://www.ipa.go.jp/security/announce/struts2_list.html}
+    }
+    に S2-045 が追加される \\ \hline
+    2017年3月10日 & ぴあ社が S2-045を社内で認識する \\ \hline
+    2017年3月7日～15日（後の検証で判明） & ぴあ社が運営するECコンテンツ「B.LEAGUE チケットサイト，及びファンクラブ受付サイト」が何者かにサイバー攻撃を受ける．（IPAの発表によりApache Struts2の脆弱性をぴあ社内で認識していたが，webサーバ上にクレジット情報は保存されてないと認識していた） \\ \hline
+    2017年3月17日 & SNSサイト「Twitter」にて，クレジットカードの不正利用に関する書き込みが続出．クレジットカード会社より，不正利用の形跡があると報告を受ける． \\ \hline
+    2017年3月25日 & ぴあ社は，当該ウェブサイト上でのクレジットカード決済機能を停止．同時に第三者調査機関に調査を依頼する． \\ \hline
+    2017年4月25日 & ウェブサイト上にて，不正アクセス被害の報告と謝罪を実施．予想される被害総数は15万4,599件（うちカード関係の情報は3万2,187件）と発表． \\ \hline
+    2017年4月28日 & 同社CCOを委員長とする再発防止委員会を組成．再発防止に向けて取り組む． \\ \hline
+    2017年5月18日 & 第三者調査機関の報告を受けて，ウェブサイト上で続報を発表．既に公表されていたカード情報3万2,187件とは別に，新たに6,508件の漏えいの可能性があることを公開． \\ \hline
+    \end{tabular}
+\end{table}
+\end{savenotes}

@@ -1,5 +1,5 @@
 # cs2020-group6
 
-- sgroupA: サブグループAのレポート
+- sgroupA: サブグループAのレポート -> [incident1.pdf](sgroupA/incident1.pdf)
 - sgroupB: サブグループBのレポート
 - part4: part4（比較）のレポート
